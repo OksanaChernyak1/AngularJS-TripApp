@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBTripModelStoreContainer" CdmEntityContainer="DBTripEntities1">
+    <EntitySetMapping Name="Areas">
+      <EntityTypeMapping TypeName="DBTripModel.Area">
+        <MappingFragment StoreEntitySet="Area">
+          <ScalarProperty Name="AreaID" ColumnName="AreaID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="DBTripModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CityzenTypes">
+      <EntityTypeMapping TypeName="DBTripModel.CityzenType">
+        <MappingFragment StoreEntitySet="CityzenType">
+          <ScalarProperty Name="CityzenTypeID" ColumnName="CityzenTypeID" />
+          <ScalarProperty Name="CityzenTypeName" ColumnName="CityzenTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Days">
+      <EntityTypeMapping TypeName="DBTripModel.Day">
+        <MappingFragment StoreEntitySet="Days">
+          <ScalarProperty Name="DayID" ColumnName="DayID" />
+          <ScalarProperty Name="DayName" ColumnName="DayName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OpenHours">
+      <EntityTypeMapping TypeName="DBTripModel.OpenHour">
+        <MappingFragment StoreEntitySet="OpenHours">
+          <ScalarProperty Name="OpenHoursID" ColumnName="OpenHoursID" />
+          <ScalarProperty Name="OpenHour1" ColumnName="OpenHour" />
+          <ScalarProperty Name="CloseHour" ColumnName="CloseHour" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="DayID" ColumnName="DayID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Prices">
+      <EntityTypeMapping TypeName="DBTripModel.Price">
+        <MappingFragment StoreEntitySet="Price">
+          <ScalarProperty Name="PriceID" ColumnName="PriceID" />
+          <ScalarProperty Name="Price1" ColumnName="Price" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="CityzenTypeID" ColumnName="CityzenTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RecomendedRoutes">
+      <EntityTypeMapping TypeName="DBTripModel.RecomendedRoute">
+        <MappingFragment StoreEntitySet="RecomendedRoute">
+          <ScalarProperty Name="RoutePicture" ColumnName="RoutePicture" />
+          <ScalarProperty Name="RouteID" ColumnName="RouteID" />
+          <ScalarProperty Name="RouteName" ColumnName="RouteName" />
+          <ScalarProperty Name="AvgRouteTime" ColumnName="AvgRouteTime" />
+          <ScalarProperty Name="Difficulty" ColumnName="Difficulty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sites">
+      <EntityTypeMapping TypeName="DBTripModel.Site">
+        <MappingFragment StoreEntitySet="Site">
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PhoneNo" ColumnName="PhoneNo" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="InDoor" ColumnName="InDoor" />
+          <ScalarProperty Name="OutDoor" ColumnName="OutDoor" />
+          <ScalarProperty Name="Accessibility" ColumnName="Accessibility" />
+          <ScalarProperty Name="AvgStayTime" ColumnName="AvgStayTime" />
+          <ScalarProperty Name="WebSite" ColumnName="WebSite" />
+          <ScalarProperty Name="AreaID" ColumnName="AreaID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="SitePicture" ColumnName="SitePicture" />
+          <ScalarProperty Name="Lat" ColumnName="Lat" />
+          <ScalarProperty Name="Lon" ColumnName="Lon" />
+          <ScalarProperty Name="About" ColumnName="About" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RouteNumberings">
+      <EntityTypeMapping TypeName="DBTripModel.RouteNumbering">
+        <MappingFragment StoreEntitySet="RouteNumbering">
+          <ScalarProperty Name="RouteNumberID" ColumnName="RouteNumberID" />
+          <ScalarProperty Name="NumInRoute" ColumnName="NumInRoute" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="RouteID" ColumnName="RouteID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

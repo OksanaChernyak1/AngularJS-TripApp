@@ -1,0 +1,119 @@
+﻿h1 { color: #855085; 
+     font-family: "Great Vibes"; 
+     font-size: 90px;  
+     text-align: center; 
+     text-shadow: 2px 5px 0 rgba(0,0,0,0.2);
+}
+
+.sites-list-title{
+text-align:center;
+font-size:3.6rem;
+color:red;
+}
+
+
+.site-container {
+margin:10px auto;
+width:80%;
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+}
+
+
+/*.search-box {
+margin: 13px 0px 0px 0px;
+}*/
+.search-box .input-text {
+    width: 65%;
+}
+
+.card {
+    transition:all 0.24s ease-in-out;
+    margin: 20px;
+    border: 2px solid silver;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    transition:all 0.24s ease-in-out;
+    box-shadow: 0px 3px 15px 1px silver;
+}
+
+.card-img-top {
+    height:300px;
+    width: 310px;
+}
+.btn {
+width: 100%;
+cursor:pointer;
+}
+
+.btn a {
+color:white;
+text-decoration:none;
+text-align:center;
+font-weight:bold;
+}
+
+.btn a:hover {
+color:white;    
+}
+.site-container ul {
+list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.site-container ul li{
+width: 95%;
+    height: 100px;
+    margin: 30px auto;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;   
+    box-shadow:1px 2px 3px 2px #f2f2f2;
+
+}
+
+    .site-container ul li .left-img {
+    width:15%;
+    display:inline-block;
+    }
+
+.site-container ul li .left-img img{
+height:100px;
+width:100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.site-container ul li .right-details {
+width:70%;
+display:inline-block;
+
+}
+
+
+
+/*.site-container ul li {
+border:1px solid black;
+border-radius:15px;
+width:95%;
+margin:25px auto;
+}*/
+/*.site-container .site-img img {
+    height: 20vh;
+    width: 20%;
+    border-top-left-radius:15px;
+    border-bottom-left-radius:15px;
+    display:inline-block;
+}*/
+
+/*.site-details {
+border:1px solid black;
+display:inline-block;
+width:69%;
+height:20vh;
+position:absolute;
+}*/
+

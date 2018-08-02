@@ -1,0 +1,55 @@
+﻿.card {
+width: 90%;
+margin: 20px auto;
+border: 2px solid silver;
+}
+
+h1 { color: #855085; 
+     font-family: "Great Vibes"; 
+     font-size: 60px;  
+     text-align: center; 
+     text-shadow: 2px 5px 0 rgba(0,0,0,0.2);
+}
+
+.routeDetails {
+text-align:left;
+}
+
+
+
+#right-panel {
+font-family: 'Roboto','sans-serif';
+line-height: 30px;
+padding-left: 10px;
+}
+
+#right-panel select, #right-panel input {
+font-size: 15px;
+}
+
+#right-panel select {
+width: 100%;
+}
+
+#right-panel i {
+font-size: 12px;
+}
+html, body {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+#map {
+height: 500px;
+float: left;
+width: 70%;
+}
+#right-panel {
+margin: 20px;
+border-width: 2px;
+width: 20%;
+height: 400px;
+float: left;
+text-align: left;
+padding-top: 0;
+}

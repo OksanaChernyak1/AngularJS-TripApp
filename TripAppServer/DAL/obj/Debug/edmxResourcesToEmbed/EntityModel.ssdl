@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBTripModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Area">
+    <Key>
+      <PropertyRef Name="AreaID" />
+    </Key>
+    <Property Name="AreaID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CityzenType">
+    <Key>
+      <PropertyRef Name="CityzenTypeID" />
+    </Key>
+    <Property Name="CityzenTypeID" Type="int" Nullable="false" />
+    <Property Name="CityzenTypeName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Days">
+    <Key>
+      <PropertyRef Name="DayID" />
+    </Key>
+    <Property Name="DayID" Type="int" Nullable="false" />
+    <Property Name="DayName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OpenHours">
+    <Key>
+      <PropertyRef Name="OpenHoursID" />
+    </Key>
+    <Property Name="OpenHoursID" Type="int" Nullable="false" />
+    <Property Name="OpenHour" Type="time" Precision="7" />
+    <Property Name="CloseHour" Type="time" Precision="7" />
+    <Property Name="SiteID" Type="int" Nullable="false" />
+    <Property Name="DayID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Price">
+    <Key>
+      <PropertyRef Name="PriceID" />
+    </Key>
+    <Property Name="PriceID" Type="int" Nullable="false" />
+    <Property Name="Price" Type="int" Nullable="false" />
+    <Property Name="SiteID" Type="int" Nullable="false" />
+    <Property Name="CityzenTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RecomendedRoute">
+    <Key>
+      <PropertyRef Name="RouteID" />
+    </Key>
+    <Property Name="RouteID" Type="int" Nullable="false" />
+    <Property Name="RouteName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="AvgRouteTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="Difficulty" Type="int" Nullable="false" />
+    <Property Name="RoutePicture" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="RouteNumbering">
+    <Key>
+      <PropertyRef Name="RouteNumberID" />
+    </Key>
+    <Property Name="RouteID" Type="int" Nullable="false" />
+    <Property Name="SiteID" Type="int" Nullable="false" />
+    <Property Name="NumInRoute" Type="int" Nullable="false" />
+    <Property Name="RouteNumberID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Site">
+    <Key>
+      <PropertyRef Name="SiteID" />
+    </Key>
+    <Property Name="SiteID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PhoneNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="InDoor" Type="bit" />
+    <Property Name="OutDoor" Type="bit" />
+    <Property Name="Accessibility" Type="bit" />
+    <Property Name="AvgStayTime" Type="nvarchar" MaxLength="50" />
+    <Property Name="WebSite" Type="nvarchar(max)" />
+    <Property Name="AreaID" Type="int" Nullable="false" />
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+    <Property Name="SitePicture" Type="nvarchar(max)" />
+    <Property Name="Lat" Type="float" Nullable="false" />
+    <Property Name="Lon" Type="float" Nullable="false" />
+    <Property Name="About" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="FK_OpenHours_Days">
+    <End Role="Days" Type="Self.Days" Multiplicity="1" />
+    <End Role="OpenHours" Type="Self.OpenHours" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Days">
+        <PropertyRef Name="DayID" />
+      </Principal>
+      <Dependent Role="OpenHours">
+        <PropertyRef Name="DayID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OpenHours_Site">
+    <End Role="Site" Type="Self.Site" Multiplicity="1" />
+    <End Role="OpenHours" Type="Self.OpenHours" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Site">
+        <PropertyRef Name="SiteID" />
+      </Principal>
+      <Dependent Role="OpenHours">
+        <PropertyRef Name="SiteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Price_CityzenType">
+    <End Role="CityzenType" Type="Self.CityzenType" Multiplicity="1" />
+    <End Role="Price" Type="Self.Price" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CityzenType">
+        <PropertyRef Name="CityzenTypeID" />
+      </Principal>
+      <Dependent Role="Price">
+        <PropertyRef Name="CityzenTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Price_Site">
+    <End Role="Site" Type="Self.Site" Multiplicity="1" />
+    <End Role="Price" Type="Self.Price" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Site">
+        <PropertyRef Name="SiteID" />
+      </Principal>
+      <Dependent Role="Price">
+        <PropertyRef Name="SiteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RouteNumbering_RecomendedRoute">
+    <End Role="RecomendedRoute" Type="Self.RecomendedRoute" Multiplicity="1" />
+    <End Role="RouteNumbering" Type="Self.RouteNumbering" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RecomendedRoute">
+        <PropertyRef Name="RouteID" />
+      </Principal>
+      <Dependent Role="RouteNumbering">
+        <PropertyRef Name="RouteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RouteNumbering_Site">
+    <End Role="Site" Type="Self.Site" Multiplicity="1" />
+    <End Role="RouteNumbering" Type="Self.RouteNumbering" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Site">
+        <PropertyRef Name="SiteID" />
+      </Principal>
+      <Dependent Role="RouteNumbering">
+        <PropertyRef Name="SiteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Site_Area">
+    <End Role="Area" Type="Self.Area" Multiplicity="1" />
+    <End Role="Site" Type="Self.Site" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Area">
+        <PropertyRef Name="AreaID" />
+      </Principal>
+      <Dependent Role="Site">
+        <PropertyRef Name="AreaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Site_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="Site" Type="Self.Site" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="Site">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DBTripModelStoreContainer">
+    <EntitySet Name="Area" EntityType="Self.Area" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CityzenType" EntityType="Self.CityzenType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Days" EntityType="Self.Days" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OpenHours" EntityType="Self.OpenHours" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Price" EntityType="Self.Price" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RecomendedRoute" EntityType="Self.RecomendedRoute" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RouteNumbering" EntityType="Self.RouteNumbering" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Site" EntityType="Self.Site" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_OpenHours_Days" Association="Self.FK_OpenHours_Days">
+      <End Role="Days" EntitySet="Days" />
+      <End Role="OpenHours" EntitySet="OpenHours" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OpenHours_Site" Association="Self.FK_OpenHours_Site">
+      <End Role="Site" EntitySet="Site" />
+      <End Role="OpenHours" EntitySet="OpenHours" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Price_CityzenType" Association="Self.FK_Price_CityzenType">
+      <End Role="CityzenType" EntitySet="CityzenType" />
+      <End Role="Price" EntitySet="Price" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Price_Site" Association="Self.FK_Price_Site">
+      <End Role="Site" EntitySet="Site" />
+      <End Role="Price" EntitySet="Price" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RouteNumbering_RecomendedRoute" Association="Self.FK_RouteNumbering_RecomendedRoute">
+      <End Role="RecomendedRoute" EntitySet="RecomendedRoute" />
+      <End Role="RouteNumbering" EntitySet="RouteNumbering" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RouteNumbering_Site" Association="Self.FK_RouteNumbering_Site">
+      <End Role="Site" EntitySet="Site" />
+      <End Role="RouteNumbering" EntitySet="RouteNumbering" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Site_Area" Association="Self.FK_Site_Area">
+      <End Role="Area" EntitySet="Area" />
+      <End Role="Site" EntitySet="Site" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Site_Category" Association="Self.FK_Site_Category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Site" EntitySet="Site" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

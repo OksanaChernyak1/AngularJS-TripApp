@@ -1,0 +1,31 @@
+﻿<div ng-controller="planRouteController as planSiteCtrl">
+
+    <div class="card page-container">
+        <div class="map-ctr">
+            <div id="map"></div>
+        </div>
+        <div class="plan-route-ctr">
+            <h2 class="text-center">Plan Route</h2>
+            <select  class="navigate-plan-select" multiple>
+                
+                <option ng-repeat="x in planSiteCtrl.planRouteListArr" value="{{x.SiteID}}">{{x.Name}}</option>
+               
+            </select>
+
+            <div class="btn-ctr"><button id="submit" type="button" class="btn btn-success">Create Route</button></div>
+        </div>
+        <div class="buttons-container">
+            <div class="buttons">
+                <button  ng-click="planSiteCtrl.addToPlanRoute()" class="btn btn-primary">< Add</button>
+                <button ng-click="planSiteCtrl.removeFromPlanRoute()" class="btn btn-danger">Remove ></button>
+            </div>
+        </div>
+
+        <div class="sites-list-ctr">
+            <h2 class="text-center">Pick a Site</h2>
+            <select id="waypoints" class="all-sites-select" multiple>
+                <option ng-repeat="x in planSiteCtrl.sitesList" value="{{x.SiteID}}">{{x.Name}}</option>
+            </select>
+        </div>
+    </div>
+</div>

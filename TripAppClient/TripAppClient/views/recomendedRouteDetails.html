@@ -1,0 +1,33 @@
+﻿<div ng-controller="recomendedRouteDetailsController as recomendedRouteDetailsCtrl">
+    <h1>{{recomendedRouteDetailsCtrl.route.RouteName}}</h1>
+    <div class="card">
+        <div class="card-body">
+            <div id="map"></div>
+            <div id="right-panel">
+                <div>
+                    <b>Start:</b>
+                        <div>{{recomendedRouteDetailsCtrl.sitesName[0]}}</div>
+            
+   
+                        <b>Waypoints:</b>
+                        <div ng-repeat="x in recomendedRouteDetailsCtrl.sitesName track by $index">
+                            <div ng-show="$index != 0 && $index != recomendedRouteDetailsCtrl.sitesName.length - 1">{{x}}</div>
+                        </div>
+           
+
+
+
+
+
+
+
+                
+                    <b>End:</b>
+                    <div>{{recomendedRouteDetailsCtrl.sitesName[recomendedRouteDetailsCtrl.sitesName.length-1]}}</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,63 @@
+﻿body {
+    margin:0;
+    padding:0;
+}
+
+.page-container {
+display:flex;
+justify-content:space-between;
+flex-direction: row;
+width:90%;
+margin:100px auto;
+height:600px;
+
+}
+
+ .plan-route-ctr, .sites-list-ctr {
+width:20%;
+height:450px;
+}
+
+.map-ctr {
+width:40%;
+height:100%;
+}
+
+
+
+ #map {
+        display:inline-block;
+        width: 100%;
+        height: 100%;
+      }
+
+.navigate-plan-select , .all-sites-select {
+    width: 100%;
+    height: 100%;
+
+}
+.buttons {
+position: relative;
+top: 35%;
+}
+
+
+.buttons button {
+display:block;
+width:90px;
+height:40px;
+margin-top:25px;
+cursor:pointer;
+
+}
+
+.btn-ctr {
+    width:90%;
+    height:50px;
+    margin:25px auto;
+
+}
+.plan-route-ctr button {
+    cursor:pointer;
+    width:100%;
+}

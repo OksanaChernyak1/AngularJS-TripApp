@@ -1,0 +1,27 @@
+﻿<div ng-controller="favoritesController as favoritesCtrl">
+    <div class="favorites-ctr" ng-repeat="favSite in favoritesCtrl.favoritesArray">
+
+        <div class="left-side">
+            <img src="{{favSite.SitePicture}}" alt="Alternate Text" />
+        </div>
+
+        <div class="right-side">
+            <h2 class="text-center">{{favSite.Name}}</h2>
+            <div class="text-left site-details">
+                <div><span>Address:</span> {{favSite.Address}}</div>
+                <div><span>Phone:</span> {{favSite.PhoneNo}}</div>
+            </div>
+            <div class="site-buttons-container">
+                <div><a class="btn btn-primary" ng-href="#/site/{{favSite.SiteID}}">Enter Site</a></div>
+                <div><button type="button" class="btn btn-secondary favorite-button" ng-click="favoritesCtrl.removeFromFavorites(favSite.SiteID)">Favorites<i class="material-icons filled-star">star</i></button></div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--<i class="material-icons filled-star">star_border</i>-->
+    <!--<i class="material-icons empty-star">star</i>-->
+
+
+</div>

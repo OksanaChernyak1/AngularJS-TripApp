@@ -1,0 +1,10 @@
+﻿body {
+overflow-y:hidden;
+}
+.home-img{
+    background-image:url(../assets/Acre.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+        height: 100vh;
+
+}

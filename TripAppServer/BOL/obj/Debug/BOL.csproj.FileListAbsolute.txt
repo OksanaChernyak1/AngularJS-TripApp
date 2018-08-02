@@ -1,0 +1,8 @@
+C:\Users\user\documents\visual studio 2015\Projects\TripAppServer\BOL\bin\Debug\BOL.dll
+C:\Users\user\documents\visual studio 2015\Projects\TripAppServer\BOL\bin\Debug\BOL.pdb
+C:\Users\user\documents\visual studio 2015\Projects\TripAppServer\BOL\obj\Debug\BOL.csprojResolveAssemblyReference.cache
+C:\Users\user\documents\visual studio 2015\Projects\TripAppServer\BOL\obj\Debug\BOL.dll
+C:\Users\user\documents\visual studio 2015\Projects\TripAppServer\BOL\obj\Debug\BOL.pdb
+C:\Users\user\documents\visual studio 2015\Projects\TripAppServer\BOL\bin\Debug\BOL.dll.config
+C:\Users\user\documents\visual studio 2015\Projects\TripAppServer\BOL\bin\Debug\EntityFramework.dll
+C:\Users\user\documents\visual studio 2015\Projects\TripAppServer\BOL\bin\Debug\EntityFramework.xml

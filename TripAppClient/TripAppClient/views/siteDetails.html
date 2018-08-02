@@ -1,0 +1,70 @@
+﻿<div ng-controller="singleSiteController as singleSiteCtrl">
+
+       <h1>{{singleSiteCtrl.site.Name}}</h1>
+        <div class="card">
+            <img class="card-img-top" src="{{singleSiteCtrl.site.SitePicture}}" alt="Card image cap">
+            <div class="card-body">
+                
+
+                <button ng-if="singleSiteCtrl.ShowRouteButton()" ng-click="singleSiteCtrl.toggleRouteButton()" type="button" class="btn btn-danger route-btn">Remove from Route</button>
+                <button ng-if="!singleSiteCtrl.ShowRouteButton()" ng-click="singleSiteCtrl.toggleRouteButton()" type="button" class="btn btn-primary route-btn">Add to Route</button>
+                <button type="button" class="btn btn-secondary favorites-btn" ng-click="singleSiteCtrl.setStorage()">Favorites
+
+                
+                
+                <i ng-if="singleSiteCtrl.showFav()" class="material-icons empty-star">star</i>
+                <i ng-if="!singleSiteCtrl.showFav()" class="material-icons filled-star">star_border</i>
+                
+                </button>
+                <a class="btn btn-success" href="http://{{singleSiteCtrl.site.WebSite}}" target="_blank">Website</a>
+            </div>
+            <div class="card-details">
+                <ul>
+                    <li>About: {{singleSiteCtrl.site.About}}</li>
+                    <li>Phone: {{singleSiteCtrl.site.PhoneNo}}</li>
+                    <li>Address: {{singleSiteCtrl.site.Address}}</li>
+                    <li>InDoor: {{singleSiteCtrl.site.InDoor}}</li>
+                    <li>OutDoor: {{singleSiteCtrl.site.OutDoor}}</li>
+                    <li>Accessability: {{singleSiteCtrl.site.Accessibility}}</li>
+                    <li>Average time: {{singleSiteCtrl.site.AvgStayTime}}</li>
+                </ul>
+                <div id="map"></div>
+                <table ng-show="singleSiteCtrl.site.Price.length != 0"  class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Cityzen Type</th>
+                            <th scope="col">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="x in singleSiteCtrl.site.Price">
+                            <td>{{x.CityzenType.CityzenTypeName}}</td>
+                            <td>{{x.Price}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table ng-show="singleSiteCtrl.site.OpenHours.length != 0" class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Day</th>
+                            <th scope="col">Open Hour</th>
+                            <th scope="col">Close Hour</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="x in singleSiteCtrl.site.OpenHours">
+                            <td>{{x.Days.DayName}}</td>
+                            <td>{{x.OpenHour}}</td>
+                            <td>{{x.CloseHour}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+               
+            </div>
+        </div>
+</div>
+
+
+
+

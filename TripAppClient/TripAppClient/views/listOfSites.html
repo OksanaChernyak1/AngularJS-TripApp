@@ -1,0 +1,25 @@
+﻿<div ng-controller="siteController as siteCtrl" >
+
+    <h1>Sites List</h1>
+    <div class="text-center search-box"><label for="search">Search:&nbsp;</label>
+    <input class="input-text" type="text" id="search" ng-model="filterSites" value="" />
+    </div>
+    <div class="site-container">
+        <div class="sitesStyle" ng-repeat="site in siteCtrl.sitesList | filter:filterSites">
+
+            
+            <div class="card">
+                <img class="card-img-top" src="{{site.SitePicture}}" alt="Card image cap">
+                <div class="card-body">
+                    <div class="text-center font-weight-bold m-2">{{site.Name}}</div>
+                    <div><a class="btn btn-primary" ng-href="#/site/{{site.SiteID}}">Enter Site</a></div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</div>

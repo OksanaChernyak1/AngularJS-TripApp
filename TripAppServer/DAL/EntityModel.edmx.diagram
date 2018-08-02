@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2eb947d7ca4d4a7b828ef5c480049e18" Name="Diagram1">
+        <EntityTypeShape EntityType="DBTripModel.Area" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBTripModel.Category" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBTripModel.CityzenType" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBTripModel.Day" Width="1.5" PointX="3" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBTripModel.OpenHour" Width="1.5" PointX="5.25" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBTripModel.Price" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBTripModel.RecomendedRoute" Width="3.25" PointX="4.375" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBTripModel.Site" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <AssociationConnector Association="DBTripModel.FK_Site_Area" ManuallyRouted="false" />
+        <AssociationConnector Association="DBTripModel.FK_Site_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="DBTripModel.FK_Price_CityzenType" ManuallyRouted="false" />
+        <AssociationConnector Association="DBTripModel.FK_OpenHours_Days" ManuallyRouted="false" />
+        <AssociationConnector Association="DBTripModel.FK_OpenHours_Site" ManuallyRouted="false" />
+        <AssociationConnector Association="DBTripModel.FK_Price_Site" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DBTripModel.RouteNumbering" Width="1.5" PointX="8.375" PointY="7.125" />
+        <AssociationConnector Association="DBTripModel.FK_RouteNumbering_RecomendedRoute" />
+        <AssociationConnector Association="DBTripModel.FK_RouteNumbering_Site" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

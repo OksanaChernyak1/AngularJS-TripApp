@@ -1,0 +1,61 @@
+c:\users\eliran\documents\visual studio 2015\Projects\TripAppClient\TripAppClient\bin\roslyn\csc.exe
+c:\users\eliran\documents\visual studio 2015\Projects\TripAppClient\TripAppClient\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\eliran\documents\visual studio 2015\Projects\TripAppClient\TripAppClient\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\eliran\documents\visual studio 2015\Projects\TripAppClient\TripAppClient\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\eliran\documents\visual studio 2015\Projects\TripAppClient\TripAppClient\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\eliran\documents\visual studio 2015\Projects\TripAppClient\TripAppClient\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\eliran\documents\visual studio 2015\Projects\TripAppClient\TripAppClient\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\eliran\documents\visual studio 2015\Projects\TripAppClient\TripAppClient\bin\roslyn\System.Collections.Immutable.dll
+c:\users\eliran\documents\visual studio 2015\Projects\TripAppClient\TripAppClient\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\eliran\documents\visual studio 2015\Projects\TripAppClient\TripAppClient\bin\roslyn\vbc.exe
+c:\users\eliran\documents\visual studio 2015\Projects\TripAppClient\TripAppClient\bin\roslyn\VBCSCompiler.exe
+c:\users\eliran\documents\visual studio 2015\Projects\TripAppClient\TripAppClient\bin\roslyn\VBCSCompiler.exe.config
+c:\users\eliran\documents\visual studio 2015\Projects\TripAppClient\TripAppClient\bin\TripAppClient.dll.config
+c:\users\eliran\documents\visual studio 2015\Projects\TripAppClient\TripAppClient\bin\TripAppClient.dll
+c:\users\eliran\documents\visual studio 2015\Projects\TripAppClient\TripAppClient\bin\TripAppClient.pdb
+c:\users\eliran\documents\visual studio 2015\Projects\TripAppClient\TripAppClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\eliran\documents\visual studio 2015\Projects\TripAppClient\TripAppClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\eliran\documents\visual studio 2015\Projects\TripAppClient\TripAppClient\obj\Debug\TripAppClient.csprojResolveAssemblyReference.cache
+c:\users\eliran\documents\visual studio 2015\Projects\TripAppClient\TripAppClient\obj\Debug\TripAppClient.dll
+c:\users\eliran\documents\visual studio 2015\Projects\TripAppClient\TripAppClient\obj\Debug\TripAppClient.pdb
+C:\Users\dimitry-c\Desktop\TripApp\TripAppClient\TripAppClient\bin\roslyn\csc.exe
+C:\Users\dimitry-c\Desktop\TripApp\TripAppClient\TripAppClient\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\dimitry-c\Desktop\TripApp\TripAppClient\TripAppClient\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\dimitry-c\Desktop\TripApp\TripAppClient\TripAppClient\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\dimitry-c\Desktop\TripApp\TripAppClient\TripAppClient\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\dimitry-c\Desktop\TripApp\TripAppClient\TripAppClient\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\dimitry-c\Desktop\TripApp\TripAppClient\TripAppClient\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\dimitry-c\Desktop\TripApp\TripAppClient\TripAppClient\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\dimitry-c\Desktop\TripApp\TripAppClient\TripAppClient\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\dimitry-c\Desktop\TripApp\TripAppClient\TripAppClient\bin\roslyn\vbc.exe
+C:\Users\dimitry-c\Desktop\TripApp\TripAppClient\TripAppClient\bin\roslyn\VBCSCompiler.exe
+C:\Users\dimitry-c\Desktop\TripApp\TripAppClient\TripAppClient\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\dimitry-c\Desktop\TripApp\TripAppClient\TripAppClient\bin\TripAppClient.dll.config
+C:\Users\dimitry-c\Desktop\TripApp\TripAppClient\TripAppClient\bin\TripAppClient.dll
+C:\Users\dimitry-c\Desktop\TripApp\TripAppClient\TripAppClient\bin\TripAppClient.pdb
+C:\Users\dimitry-c\Desktop\TripApp\TripAppClient\TripAppClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\dimitry-c\Desktop\TripApp\TripAppClient\TripAppClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\dimitry-c\Desktop\TripApp\TripAppClient\TripAppClient\obj\Debug\TripAppClient.csprojResolveAssemblyReference.cache
+C:\Users\dimitry-c\Desktop\TripApp\TripAppClient\TripAppClient\obj\Debug\TripAppClient.csproj.CoreCompileInputs.cache
+C:\Users\dimitry-c\Desktop\TripApp\TripAppClient\TripAppClient\obj\Debug\TripAppClient.dll
+C:\Users\dimitry-c\Desktop\TripApp\TripAppClient\TripAppClient\obj\Debug\TripAppClient.pdb
+D:\לימודים\פרוייקט Full Stack\TripAppClient\TripAppClient\bin\roslyn\csc.exe
+D:\לימודים\פרוייקט Full Stack\TripAppClient\TripAppClient\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\לימודים\פרוייקט Full Stack\TripAppClient\TripAppClient\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\לימודים\פרוייקט Full Stack\TripAppClient\TripAppClient\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\לימודים\פרוייקט Full Stack\TripAppClient\TripAppClient\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\לימודים\פרוייקט Full Stack\TripAppClient\TripAppClient\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\לימודים\פרוייקט Full Stack\TripAppClient\TripAppClient\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\לימודים\פרוייקט Full Stack\TripAppClient\TripAppClient\bin\roslyn\System.Collections.Immutable.dll
+D:\לימודים\פרוייקט Full Stack\TripAppClient\TripAppClient\bin\roslyn\System.Reflection.Metadata.dll
+D:\לימודים\פרוייקט Full Stack\TripAppClient\TripAppClient\bin\roslyn\vbc.exe
+D:\לימודים\פרוייקט Full Stack\TripAppClient\TripAppClient\bin\roslyn\VBCSCompiler.exe
+D:\לימודים\פרוייקט Full Stack\TripAppClient\TripAppClient\bin\roslyn\VBCSCompiler.exe.config
+D:\לימודים\פרוייקט Full Stack\TripAppClient\TripAppClient\bin\TripAppClient.dll.config
+D:\לימודים\פרוייקט Full Stack\TripAppClient\TripAppClient\bin\TripAppClient.dll
+D:\לימודים\פרוייקט Full Stack\TripAppClient\TripAppClient\bin\TripAppClient.pdb
+D:\לימודים\פרוייקט Full Stack\TripAppClient\TripAppClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\לימודים\פרוייקט Full Stack\TripAppClient\TripAppClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\לימודים\פרוייקט Full Stack\TripAppClient\TripAppClient\obj\Debug\TripAppClient.csprojResolveAssemblyReference.cache
+D:\לימודים\פרוייקט Full Stack\TripAppClient\TripAppClient\obj\Debug\TripAppClient.dll
+D:\לימודים\פרוייקט Full Stack\TripAppClient\TripAppClient\obj\Debug\TripAppClient.pdb

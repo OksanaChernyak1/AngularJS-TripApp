@@ -1,0 +1,18 @@
+﻿<div class="flex" ng-controller="recomendedRoutesController as recomendedRoutesCtrl">
+    <div  ng-repeat="recomendedRoute in recomendedRoutesCtrl.recomendedRoutesList">
+
+       
+            <div class="card">
+                <div class="card-header">
+                    <img class="card-img-top" src="{{recomendedRoute.RoutePicture}}" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">{{recomendedRoute.RouteName}}</h5>
+                    <p class="card-text">{{recomendedRoute.Description}}</p>
+                    <a class="btn btn-primary" ng-href="#/recomendedRouteDetails/{{recomendedRoute.RouteID}}">Enter Route</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
